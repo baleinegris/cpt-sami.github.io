@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rock Band Song Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="song-finder.js" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Rock Band Song Finder</h1>
+            <img class="corner-logo" src="RBL.png" alt="Rock Band Live">
+        </header>
+
+        <form id="search-form" role="search">
+            <label for="search">Song or artist</label>
+            <input
+                id="search"
+                name="search"
+                type="search"
+                autocomplete="off"
+                placeholder="Start typing..."
+            >
+        </form>
+
+        <p id="status" role="status">Loading songs...</p>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Song</th>
+                        <th scope="col">Artist</th>
+                    </tr>
+                </thead>
+                <tbody id="song-list"></tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

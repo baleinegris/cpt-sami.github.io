@@ -1,0 +1,125 @@
+/* Intentionally plain. It is a song list, not a startup. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    color: #111;
+    background: #ddd;
+    font: 16px/1.4 Arial, sans-serif;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 18px;
+    background: #fff;
+    border: 2px solid #222;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    border-bottom: 2px solid #222;
+}
+
+h1 {
+    margin: 0 0 12px;
+    font-size: 28px;
+}
+
+.corner-logo {
+    margin-bottom: 12px;
+    padding: 2px 6px;
+    color: #fff;
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select {
+    min-height: 38px;
+    padding: 6px 8px;
+    border: 1px solid #555;
+    border-radius: 0;
+    background: #fff;
+    font: inherit;
+}
+
+input {
+    flex: 1 1 280px;
+}
+
+select {
+    margin-right: 4px;
+}
+
+#status {
+    margin: 10px 0;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 7px 9px;
+    border: 1px solid #777;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #bbb;
+}
+
+tbody tr:nth-child(even) {
+    background: #eee;
+}
+
+@media (max-width: 560px) {
+    body {
+        padding: 8px;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    form {
+        align-items: stretch;
+    }
+
+    form label,
+    input,
+    select {
+        width: 100%;
+    }
+}
